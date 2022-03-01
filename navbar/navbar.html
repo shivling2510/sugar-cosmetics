@@ -6,8 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/sugar_favicon.jpg" type="image/x-icon">
     
-    <title>Cosmetics: Buy Beauty Producst Online at SUGAR Cosmetics Online Store</title>
+    <title>Cosmetics: Buy Beauty Product Online at SUGAR Cosmetics Online Store</title>
    <style>
+<<<<<<< Updated upstream
+=======
+       body{
+           margin:0;
+           padding:0;
+           font-family: Quicksand;
+            background-color: #f5f5f5;
+       }
+       #sugar_logo{
+            height: 40px;
+            width: 120px;
+            margin-left: 30px;
+       }
+>>>>>>> Stashed changes
        .nav{
            border: 1px solid black;
            padding:16px;
@@ -15,11 +29,27 @@
            display:flex;
            flex-direction:row;
        }
+<<<<<<< Updated upstream
        .sugarlogo{
            box-sizing:border-box;
            display:flex;
            margin-left:20px;
            border:1px solid black;
+=======
+
+       #search{
+           border:none;
+           height: 40px;
+           width: 120px;
+           padding: 5px;
+           background-color: black;
+           color: white;
+           border-top-right-radius: 25px;
+           border-bottom-right-radius: 25px;
+           /* position:fixed; */
+           cursor:pointer;
+          
+>>>>>>> Stashed changes
        }
        .sugarlogo img{
         width:130px;
@@ -29,24 +59,166 @@
        .searchInput{
            border:none;
            outline:none;
-           font-size:13px;
+           font-size:15px;
            background:#fff;
            z-index:100;
            border-top-left-radius: 25px;
            border-bottom-left-radius: 25px;
+<<<<<<< Updated upstream
        }
        .col-9{
            width:75%;
            flex: 0 0 auto;
 
+=======
+           margin-left: 100px;
+           /* position:fixed; */
+          
+       }
+       #login{
+           margin-left: 150px;
+           font-size: 18px;
+       }
+       #cart{
+           margin-left: 150px;
+           margin-top: 10px;
+           gap: 5px;
+       }
+       #options{
+           color:#6c757d;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            font-weight: bolder;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-bottom:20px;
+>>>>>>> Stashed changes
        }
        .px-4{
            padding-right:1.5em;
            padding-left:1.5em;
        }
+<<<<<<< Updated upstream
        
        
 
+=======
+       .main-slider{
+           height:453px;
+           border-radius:10px; 
+           display:flex;
+           justify-content:center;
+           align-items:center;
+           background:#f5f5f5;
+           border-top: #6c757d;
+           
+       }
+       .slides{
+           /* width:1900px; */
+           /* width:500%; */
+           height:453px;
+           border-radius:10px;
+           display:flex;
+           overflow:hidden;
+       }
+       .slides input{
+           display:none;
+       }
+       .slide{
+           width:120%;
+           transition:2s;
+
+       }
+       .slide img{
+           /* width:1900px; */
+           width:1800px;
+           height:453px;
+       }
+       /* css for manual navigation */
+       .navigation-manual{
+           /* position:absolute; */
+           display:flex;
+           /* margin-bottom:-400px; */
+           justify-content:center;
+           margin-top:20px;
+
+       }
+       .navigation-auto{
+           display:flex;
+           justify-content:center;
+           margin-top:20px;
+       }
+       
+       .manual-btn{
+           background:grey;
+           /* border:2px solid blue; */
+           padding:5px;
+           border-radius:10px;
+           cursor:pointer;
+           transition:1s;
+       }
+       .navigation-auto div{
+           padding:5px;
+           border-radius:10px;
+           transition:1s;
+        }
+
+       .manual-btn:not(:last-child){
+           margin-right:10px;
+
+       }
+       .manual-btn:hover{
+           background:black;
+       }
+       #radio1:checked~ .first{
+           margin-left:0;
+           background:black;
+       }
+       #radio2:checked~ .first {
+           margin-left:-100%;
+           background:black;
+       }
+       #radio3:checked~ .first {
+           margin-left:-200%;
+           background:black;
+       }
+       #radio4:checked~ .first {
+           margin-left:-300%;
+           background:black;
+       }
+       #radio5:checked~ .first{
+           margin-left:-400%;
+           background:black;
+       }
+       .slide_radio_button{
+           height:40px;
+           padding:20px;
+           display:flex;
+           justify-content: center;
+       }
+       .navigation-auto div:not(:last-child){
+           margin-right:40px;
+       }
+       /* #radio1:checked ~.navigation-auto .auto-btn1{
+           background:black;
+       } */
+       #radio2:checked ~.navigation-auto .auto-btn2{
+           background:black;
+       }
+       #radio3:checked ~.navigation-auto .auto-btn3{
+           background:black;
+       }
+       #radio4:checked ~.navigation-auto .auto-btn4{
+           background:black;
+       }
+       #radio5:checked ~.navigation-auto .auto-btn5{
+           background:black;
+       }
+
+
+
+      
+>>>>>>> Stashed changes
    </style>
 </head>
 <body>
@@ -57,11 +229,89 @@
             </a>
         </div>
         <div class="searchbox">
+<<<<<<< Updated upstream
             <input  class=" col-9 px-4 searchInput" type="text" placeholder="Try Liquid Lipstick">
 
+=======
+            <input type="text" placeholder=" Try Liquid Lipstick" id="searchbox">
+            <button id="search" type="submit">Search</button>
+>>>>>>> Stashed changes
         </div>
        
     </div>
+<<<<<<< Updated upstream
     
+=======
+
+    <!-- image slider starts here -->
+    <div class="main-slider">
+       <div class="slides">
+           <!-- radio buttons -->
+           <input type="radio" name="radio-btn" id="radio1">
+           <input type="radio" name="radio-btn" id="radio2">
+           <input type="radio" name="radio-btn" id="radio3">
+           <input type="radio" name="radio-btn" id="radio4">
+           <input type="radio" name="radio-btn" id="radio5">
+
+           <!-- slide image start -->
+          <div class="slide first">
+              <img src="./images/slider/img1.jpg" alt="">
+          </div>
+          <div class="slide">
+              <img src="./images/slider/img2.jpg" alt="">
+          </div>
+          <div class="slide">
+              <img src="./images/slider/img3.jpg" alt="">
+          </div>
+          <div class="slide">
+              <img src="./images/slider/img4.jpg" alt="">
+          </div>
+          <div class="slide">
+              <img src="./images/slider/img5.jpg" alt="">
+          </div>
+
+         
+         
+
+
+       </div>
+      
+      
+    </div>
+     <div class="slide_radio_btn">
+          <!-- manual navigation -->
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+        </div>
+         <!-- automatic navigation -->
+        <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+            <div class="auto-btn5"></div>
+        </div>
+     </div>
+       
+
+    </div>
+   
+
+>>>>>>> Stashed changes
 </body>
 </html>
+
+<script>
+    var counter=1;
+    setInterval(function(){
+        document.getElementById('radio'+counter).checked=true;
+        counter++;
+        if(counter>5){
+            counter=1;
+        }
+    },5700);
+</script>
