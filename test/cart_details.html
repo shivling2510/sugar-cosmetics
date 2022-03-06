@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blend-trend-makeup-brush/face-brushes</title>
+    <link rel="shortcut icon" href="./images/sugar_favicon.jpg" type="image/x-icon">
+    <!-- <script src="https://kit.fontawesome.com/3675b65816.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/a8d33b1250.js"></script> -->
+    
+    <script src="https://kit.fontawesome.com/80d6967eea.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./navbar.css">
+
+    <link rel="stylesheet" href="./cart_details.css">
+    <style>
+        .brush-contents {
+            /* border:1px solid red; */
+            padding: 5px;
+            height: 50px;
+            margin-left: 60px;
+            font-size: 20px;
+        }
+
+        #cardSlide1 {
+            /* margin-top:100px; */
+            text-align: center;
+        }
+
+        #cardSlide1 a {
+            color: black;
+        }
+
+        .homePricingDetails img {
+            margin-top: 30px;
+            width: 20px;
+            height: 20px;
+        }
+
+        .cardSlide2 {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        #child-div {
+            display: inline-block;
+            width: 20%;
+            overflow: hidden;
+        }
+
+        #container {
+            display: grid;
+            /* grid-template-columns: repeat(4, 1fr); */
+            gap: 20px;
+            width: 80%;
+            margin: auto;
+            height: 2%;
+            margin-top: 10px;
+            text-align: center;
+            margin: 0 10% 0 10%;
+            overflow: hidden;
+        }
+
+        #container>img {
+            width: 20%;
+            height: 50%;
+        }
+
+        #prod-card {
+            background-color: #fff;
+            margin-top: 20px;
+            /* border:1px solid red; */
+        }
+
+        .center {
+            display: block;
+            /* margin-left: auto;
+  margin-right: auto;
+  width: 50%; */
+            margin-top: 10%;
+        }
+
+        #add-to-cart {
+            width: 100px;
+            height: 20px;
+            border: none;
+            color: #fff;
+            background-color: #fff;
+        }
+
+
+        #add-to-cart:hover {
+            width: 150px;
+            height: 30px;
+            border: none;
+            text-align: center;
+            cursor: pointer;
+            color: #fff;
+            background-color: black;
+            margin-bottom: 20px;
+        }
+
+        #title {
+            font-weight: bold;
+            font-size: 20px;
+            font-family: Neutra_Display_Titling;
+            /* font-family: ; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_navbar">
+        <div class="navbar">
+            <div class="top">
+                <div class="logo">
+                    <a href="navbar.html"><img src="./images/sugar_logo.jpg" alt=""></a>
+
+                </div>
+                <div class="search">
+                    <input class="Input" type="text"
+                        placeholder="&nbsp; &nbsp; &nbsp; Try &quot; Liquid Lipstick &quot;">
+                    <button id="search-btn">Search</button>
+
+                </div>
+                <div id="login">
+                    <img src="https://in.sugarcosmetics.com/desc-images/person.png" alt="" id="person">
+                    <a href="#" style="color: black; text-align:center;">Login/Register</a>
+
+                </div>
+                <div class="icons">
+                    <i class="fas fa-heart" title="Wishlist"></i>
+
+                    <a href="http://127.0.0.1:5500/cart_details.html" style='text-decoration: none !important;' id="cart-count-link">
+                        <i class="fas fa-shopping-bag" title="Cart"></i> <span id="cart-count"></span>
+                    </a>
+                    <i class="fas fa-tags"></i>
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <div id="options">
+
+            <div class="dropdown">
+                <div class="dropdown_title"><a href="">MAKEUP</a></div>
+                <div class="dropdown-content">
+                    <div class="inside_dropdown">
+                        <a href="lips.html">LIPS</a>
+                    </div>
+                    <div class="inside_dropdown">
+                        <a href="#">FACE</a>
+                    </div>
+                    <div class="inside_dropdown">
+                        <a href="#">EYES</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <div class="dropdown_title"><a href="">BRUSHES</a></div>
+                <div class="dropdown-content">
+                    <div class="inside_dropdown">
+                        <a href="brush.html">FACE BRUSHES</a>
+                    </div>
+                    <div class="inside_dropdown">
+                        <a href="#">EYE BRUSHES</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <div class="dropdown_title"><a href="http://127.0.0.1:5500/skin_care.html">SKIN CARE</a></div>
+                <div class="dropdown-content">
+                    <div class="inside_dropdown">
+                        <a href="#">MOISTURIZERS</a>
+                    </div>
+                    <div class="inside_dropdown">
+                        <a href="#">MASKS</a>
+                    </div>
+                    <div class="inside_dropdown">
+                        <a href="#">SETTING MISTS</a>
+                    </div>
+                    <div class="inside_dropdown">
+                        <a href="#">COFFEE CULTURE RANGE</a>
+                    </div>
+                    <div class="inside_dropdown">
+                        <a href="#">SHEET MASK COMBO</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <div class="dropdown_title"><a href="">TRENDING</a></div>
+                <div class="dropdown-content">
+                    <div class="inside_dropdown">
+                        <a href="#">SUGAR MERCH STATION</a>
+                    </div>
+                    <div class="inside_dropdown">
+                        <a href="#">MAKEUP KITS</a>
+                    </div>
+                    <div class="inside_dropdown">
+                        <a href="#">BESTSELLERS</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="dropdown">
+                <div class="dropdown_title"><a href="">BLOG</a></div>
+                <div class="dropdown-content">
+                    <div class="inside_dropdown">
+                        <a href="#">FEATURED</a>
+                    </div>
+                    <div class="inside_dropdown">
+                        <a href="#">MAKEUP</a>
+                    </div>
+                    <div class="inside_dropdown">
+                        <a href="#">SKINCARE</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown_title"><a href="">OFFERS</a></div>
+        </div>
+    </div>
+    <br><br>
+
+
+    <div id="container">
+        <!-- <h1>Skin care</h1> -->
+
+    </div>
+    <div id="container22">
+        <div id="container33">
+
+        </div>
+        <div id="price-details">
+            <p> <i class="fas fa-tags"></i> &nbsp; Offers and Price Details</p>
+            <p> <i class="fas fa-shopping-bag" title="Cart"></i> <span id="cart-count"> &nbsp; </span> cart sub total :
+                <span id="total-price"> </span> </p>
+            <p><i class="fa-solid fa-truck"></i> &nbsp; shipping cost : <span id="shipping-price"></span> </p>
+            <p> <i class="fa-solid fa-tag"></i> &nbsp; Discount Applied : <span id="'discount-price"> </span> </p>
+            <p> <i class="fa-solid fa-trash-can"></i>  Ammount Payble : <span id="ammount-payble-price"> </span> </p>
+
+            <button id="checkout"> <a href="http://127.0.0.1:5500/payment.html"> Checkout</a> </button>
+           
+            
+        </div>
+    </div>
+
+    <div class="readmore">
+        <h3>READ MORE ABOUT SUGAR COSMETICS</h3>
+        <p>🛒 : <span id="cart-count"> </span> </p>
+    </div>
+    <div class="footer">
+        <div style="background-color: black;">
+            <div style="text-align: center;">
+                <img src="https://in.sugarcosmetics.com/Footer_sugar_icon.png" title="SUGAR Cosmetics" height="120px"
+                    alt="footer icon-Sugar Cosmetics">
+            </div>
+            <div style="text-align: center">
+                <span style="margin: 1%;">
+                    <img src="https://in.sugarcosmetics.com/desc-images/facebook.svg" width="18" height="18" alt=""
+                        class="cursor">
+                </span>
+
+                <span style="margin: 1%;">
+                    <img src="https://in.sugarcosmetics.com/desc-images/Instagram.svg" width="18" height="18" alt=""
+                        class="cursor">
+                </span>
+
+                <span style="margin: 1%;">
+                    <img src="https://in.sugarcosmetics.com/desc-images/Pinterest.svg" width="18" height="18" alt=""
+                        class="cursor">
+                </span>
+
+                <span style="margin: 1%;">
+                    <img src="https://in.sugarcosmetics.com/desc-images/Tumblr.svg" width="18" height="18" alt=""
+                        class="cursor">
+                </span>
+
+                <span style="margin: 1%;">
+                    <img src="https://in.sugarcosmetics.com/desc-images/Youtube.svg" width="18" height="18" alt=""
+                        class="cursor">
+                </span>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(2,50%);">
+                <div style="margin-left: 13%;">
+                    <h5
+                        style="color:white;font-size:17px; font-family: Arial, Helvetica, sans-serif;font-weight: lighter;">
+                        SUBSCRIBE TO OUR NEWSLETTER</h5>
+                </div>
+                <div style="margin-left: 3%;">
+                    <h5
+                        style="color:white;font-size:17px; font-family: Arial, Helvetica, sans-serif;font-weight: lighter;">
+                        GET THE NEW SUGAR APP TODAY</h5>
+                </div>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(2,50%);">
+                <div>
+                    <input type="text" class="mail" placeholder="Your email address">
+                    <button class="signupBtn">SIGN UP</button>
+                </div>
+                <div style="display: flex; flex-direction: row; margin-left: 3%; gap: 1%;">
+                    <div class="col-4"
+                        style="color:#999999; font-size: 16px; font-family: Arial, Helvetica, sans-serif;">Tap into a
+                        better shopping <br> experience.</div>
+                    <div>
+                        <a href="https://sugarcosmetics.app.link/WebFApp" target="_blank">
+                            <img src="https://in.sugarcosmetics.com/playstore.png" alt="playstore logo"
+                                style="margin-right:3px" height="30px">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://sugarcosmetics.app.link/WebFApp" target="_blank">
+                            <img src="https://in.sugarcosmetics.com/apple-store.png" alt="apple store logo"
+                                height="30px">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <br>
+                <p style="color:white; font-family: Arial, Helvetica, sans-serif; margin-left: 100px;">INFORMATION</p>
+                <br>
+                <div style="display: flex; gap: 10%; margin-left: 100px;">
+                    <div class="info_content">
+                        <a class="pages_link" href="mailto:hello@sugarcosmetics.com"
+                            style="color: #999999; font-family: Arial, Helvetica, sans-serif;font-size: 17px;">Contact
+                            Us</a>
+                    </div>
+                    <div class="info_content">
+                        <a href="/pages/terms-conditions"
+                            style="color: #999999; font-family: Arial, Helvetica, sans-serif;font-size: 17px;">Terms
+                            &amp; Conditions</a>
+                    </div>
+                    <div class="info_content">
+                        <a href="/pages/returns-refunds"
+                            style="color: #999999; font-family: Arial, Helvetica, sans-serif;font-size: 17px;">Returns</a>
+                    </div>
+                    <div class="info_content">
+                        <a href="/pages/faqs"
+                            style="color: #999999; font-family: Arial, Helvetica, sans-serif;font-size: 17px;">FAQs</a>
+                    </div>
+                    <div class="info_content">
+                        <a href="/pages/about-us"
+                            style="color: #999999; font-family: Arial, Helvetica, sans-serif;font-size: 17px;">About
+                            Us</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h5
+                    style="color:white;font-size:17px ; font-family: Arial, Helvetica, sans-serif; font-weight: lighter; margin-left: 100px;">
+                    GET IN TOUCH</h5>
+            </div>
+            <div style="display: flex; margin-left: 100px; gap: 8%;">
+                <div>
+                    <div style="display: flex;">
+                        <img src="https://in.sugarcosmetics.com/desc-images/phone_android_white.svg" width="15px"
+                            height="15px">
+                        <div
+                            style="color: white; font-family: Arial, Helvetica, sans-serif; font-size: 17px; font-weight: lighter;">
+                            Call us at</div>
+                    </div>
+                    <div><a href="tel:022-2847-5555" class="mail_link"
+                            style="text-decoration:none; color: #999999;">022-2847-5555</a></div>
+                    <div><a href="tel:022-6805-6009" class="mail_link"
+                            style="text-decoration:none;color: #999999;">022-6805-6009</a></div>
+                    <div style="color:gray;font-size:12px;font-family: Arial, Helvetica, sans-serif;">Monday to Friday :
+                        9 AM to 7 PM</div>
+                </div>
+                <div style="color:white">Support<p class="info_content"><a class="mail_link"
+                            style="text-decoration:none; color: #999999;"
+                            href="mailto:hello@sugarcosmetics.com">hello@sugarcosmetics.com</a></p>
+                </div>
+                <div style="color:white"><a class="mail_link" style="text-decoration:none; color: white;"
+                        target="_blank" href="https://in.sugarcosmetics.com/pages/career-opportunities">WORK WITH US</a>
+                    <p class="info_content"><a class="mail_link" style="text-decoration:none;  color: #999999;"
+                            href="mailto:careers@sugarcosmetics.com">careers@sugarcosmetics.com</a></p>
+                </div>
+                <div style="color:white"><a class="mail_link" target="_blank"
+                        style="text-decoration:none; color: white;" href="https://newsroom.sugarcosmetics.com">PRESS
+                        &amp; MEDIA</a>
+                    <p class="info_content"><a class="mail_link" target="_blank"
+                            style="text-decoration:none;  color: #999999;"
+                            href="mailto:pr@sugarcosmetics.com">pr@sugarcosmetics.com</a></p>
+                </div>
+                <div style="color:white"><a class="mail_link" target="_blank"
+                        style="text-decoration:none; color: white;"
+                        href="https://blog.sugarcosmetics.com/collab">INFLUENCER COLLAB</a>
+                    <p class="info_content"><a class="mail_link" target="_blank"
+                            style="text-decoration:none; color: #999999;"
+                            href="https://blog.sugarcosmetics.com/collab">JOIN US</a></p>
+                </div>
+            </div>
+            <div
+                style="border-top: none; border-left: none; border-right: none; border-bottom: 1px solid white; margin: 50px;">
+            </div>
+            <div style="color:white;font-family:'Poppins', sans-serif; text-align: center;">Copyright © 2022 SUGAR
+                Cosmetics. All rights reserved.</div>
+            <br><br>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+    let main = document.getElementById('container');
+    let main2 = document.getElementById('container33');
+    let shipping_price = 0.00;
+    if (localStorage.getItem("cart") == null) {
+        localStorage.setItem("cart", JSON.stringify([]))
+    }
+
+    else {
+        function cartItemCount() {
+            let cart = JSON.parse(localStorage.getItem('cart'));
+            let count = cart.length;
+            let cartCount = document.getElementById('cart-count');
+            cartCount.textContent = count;
+            console.log('length is inside else ', cart.length)
+        }
+    }
+    const shippingCost = () => {
+
+        if (total_price < 500) {
+            shipping_price = 100;
+
+        } else {
+            shipping_price = 0
+        }
+        shipping_price.toFixed(2);
+        document.getElementById('shipping-price').textContent = shipping_price;
+        console.log('called shiping price ', shipping_price)
+        paybleAmmount(total_price+shipping_price)
+    }
+    const deleteProdFromCart=(prod)=>{
+        let cart = JSON.parse((localStorage.getItem('cart')));
+        console.log('cart.length before delete', cart.length);
+        cart.splice(prod, 1)
+        console.log('cart.length after delete', cart.length);
+        localStorage.setItem('cart', JSON.stringify(cart))
+        cartItemCount();
+        
+        window.location.reload('/')
+        displayCartProductInTable();
+
+
+
+    }
+    const paybleAmmount=(ammount)=>{
+        let payble_ammount=document.getElementById('ammount-payble-price');
+        payble_ammount.textContent=ammount;
+    }
+//     document.getElementById("btn").addEventListener("click",function(){
+//   Toastify({
+//     text: "I'm a toast",
+//     duration: 3000,
+//     destination: 'https://github.com/apvarun/toastify-js',
+//     newWindow: true,
+//     close: true,
+//     gravity: "top", // `top` or `bottom`
+//     positionLeft: true, // `true` or `false`
+//     backgroundColor: "linear-gradient(to right, #00b09b, #96c93d)"
+//   }).showToast();
+// });
+
+    cartItemCount()
+
+    function displayCartProducts() {
+        let data = JSON.parse((localStorage.getItem('cart')))
+        data.forEach((item) => {
+            let prodCard = document.createElement('div');
+            prodCard.setAttribute('id', 'prod-card');
+            // prodCard.style.color=' #f5f5f5;'
+            let image = document.createElement('img');
+            image.src = item.image
+            image.setAttribute('class', 'center')
+            image.style.width = "100px";
+            image.style.height = "200px";
+            let price = document.createElement('p');
+            price.textContent = 'Rs. ' + item.price;
+            let title = document.createElement('p');
+            title.textContent = item.title.slice(0, 15)
+            title.setAttribute('id', 'title')
+            let rating = document.createElement('p');
+            let span = document.createElement('span');
+            // span.innerHTML=`<i class="fa-thin fa-heart"></i>`
+
+            let addToCart = document.createElement('button');
+            addToCart.setAttribute('id', 'add-to-cart')
+            addToCart.textContent = 'Add to Cart'
+            rating.textContent = '⭐' + item.id
+            addToCart.onclick = function () {
+                addToCartItem(item)
+                cartItemCount()
+            };
+            // let like=<i class="fa-thin fa-heart"></i>
+            prodCard.append(image, title, price, addToCart, span)
+            main.append(prodCard)
+        })
+
+
+    }
+    // displayCartProducts()
+    function displayCartProductInTable() {
+        console.log('called table function')
+        let data = JSON.parse((localStorage.getItem('cart')))
+        let table = document.createElement('table');
+        let tbody = document.createElement('tbody');
+        data.forEach((item, index) => {
+            let tr = document.createElement('tr');
+            let td1 = document.createElement('td');
+            let td10= document.createElement('td');
+            td101=document.createElement('td')
+            let td11= document.createElement('td')
+            td11.setAttribute('id', 'delete-icon')
+            td10.setAttribute('id', 'add-quantity');
+            
+            td10.innerHTML=`<i id='add-quantity2' class="fa-solid fa-plus"></i>`;
+            td101.innerHTML=`<i class="fa-solid fa-minus" id='remove-quantity'></i>`;
+            let td2 = document.createElement('td');
+            let td3 = document.createElement('td');
+            let img = document.createElement('img');
+            img.setAttribute('id', 'table-image')
+
+            img.src = item.image;
+            let price = `${1} * ` + item.price + '=' + `${item.price}`
+            let title = item.title;
+            td1.append(img);
+            td1.style.border = '1px solid blue';
+            td1.style.width = '10%';
+            td11.innerHTML=`<i class="fa-solid fa-trash" id='trash_item'></i>`;
+            td11.onclick=function(){
+                console.log('deleted to item ', item, index)
+                deleteProdFromCart(index)
+            }
+            td2.append(title);
+            td2.setAttribute('class', 'title')
+            td3.append(price);
+            tr.append(td1,td2,td10, td11,td101, td3);
+            tbody.append(tr);
+            table.append(tbody);
+            main2.append(table)
+        })
+
+    }
+    displayCartProductInTable()
+    // displayCartProducts()
+    let total_price = 0;
+    function countTotalPriceCartItem() {
+        data = JSON.parse((localStorage.getItem('cart')))
+
+        total_price = data.reduce((prev, cur) => {
+            return prev + cur.price;
+        }, 0)
+
+        console.log('total price is : ', total_price)
+        document.getElementById('total-price').textContent = total_price;
+        shippingCost()
+    }
+
+    countTotalPriceCartItem()
+
+
+    const addToCartItem = (prod) => {
+        let cart = JSON.parse(localStorage.getItem('cart'));
+
+
+        cart.push(prod)
+        localStorage.setItem('cart', JSON.stringify(cart))
+        console.log('local is ', prod, cart)
+        shippingCost();
+    }
+
+
+// notification like
+
+
+</script>
