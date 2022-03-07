@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <style>
+ #slider-container-outer-3{
+	overflow: hidden;
+}
+
+#slider-container-3 {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+    /* align-items:center; */
+    margin:20px 0px;
+}
+
+/* CSS transition applied when translation of items happen */
+.slider-container-3-transition {
+	transition: transform 0.3s ease-in-out;
+}
+
+.slider-item-3 {
+	width: 105%;
+	flex-shrink: 0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    /* margin-right:25px; */
+    /* overflow:auto; */
+    overflow:none;
+}
+.slider-item-3 img{
+    width:30%;
+    margin-right:40px;
+    margin-left:0px;
+}
+
+#move-button-3{
+   position:absolute;
+   margin-top:-200px;
+   margin-left:1700px;
+   opacity:1;
+   cursor:pointer;
+   background-color: transparent;
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="slider-container-outer-3">
+        <div id="slider-container-3" class="slider-container-3-transition">
+            <div class="slider-item-3" data-position="1">
+                <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/1b9622f9-06cd-47d5-9216-8044886bf27b.jpg" alt="">
+               
+                 
+            </div>
+            <div class="slider-item-3" data-position="2">
+                <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/1b9622f9-06cd-47d5-9216-8044886bf27b.jpg" alt="">
+               
+
+            </div>
+            
+            
+        </div>
+        <button id="move-button-3" style="border-radius: 100%; border: none;"><img src="https://in.sugarcosmetics.com/greater-than.png" ></button>
+    </div>
+    <!-- <button id="move-button">Move Item</button> -->
+   
+
+    
+</body>
+</html>
+<script>
+    const exploreSlider = {
+	// total no of items
+	num_items: document.querySelectorAll(".slider-item-3").length,
+	
+	// position of current item in view
+	current: 1,
+
+	init: function() {
+		// set CSS order of each item initially
+		document.querySelectorAll(".slider-item-3").forEach(function(element, index) {
+			element.style.order = index+1;
+		});
+
+		this.addEvents();
+	},
+
+	addEvents: function() {
+		var that = this;
+
+		// click on move item button
+		document.querySelector("#move-button-3").addEventListener('click', () => {
+			this.gotoNext();
+		});
+
+		// after each item slides in, slider container fires transitionend event
+		document.querySelector("#slider-container-3").addEventListener('transitionend', () => {
+			this.changeOrder();
+		});
+	},
+
+	changeOrder: function() {
+		// change current position
+		if(this.current == this.num_items)
+			this.current = 1;
+		else 
+			this.current++;
+
+		let order = 1;
+
+		// change order from current position till last
+		for(let i=this.current; i<=this.num_items; i++) {
+			document.querySelector(".slider-item-3[data-position='" + i + "']").style.order = order;
+			order++;
+		}
+
+		// change order from first position till current
+		for(let i=1; i<this.current; i++) {
+			document.querySelector(".slider-item-3[data-position='" + i + "']").style.order = order;
+			order++;
+		}
+
+		// translate back to 0 from -100%
+		// we don't need transitionend to fire for this translation, so remove transition CSS
+		document.querySelector("#slider-container-3").classList.remove('slider-container-3-transition');
+		document.querySelector("#slider-container-3").style.transform = 'translateX(0)';
+	},
+
+	gotoNext: function() {
+		// translate from 0 to -100% 
+		// we need transitionend to fire for this translation, so add transition CSS
+		document.querySelector("#slider-container-3").classList.add('slider-container-3-transition');
+		document.querySelector("#slider-container-3").style.transform = 'translateX(-100%)';
+	}
+};
+
+exploreSlider.init();
+
+</script>

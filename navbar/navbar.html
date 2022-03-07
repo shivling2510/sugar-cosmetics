@@ -5,92 +5,1093 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/sugar_favicon.jpg" type="image/x-icon">
-    
-    <title>Cosmetics: Buy Beauty Producst Online at SUGAR Cosmetics Online Store</title>
-   <style>
-       #sugar_logo{
-            height: 40px;
-            width: 120px;
-            margin-left: 30px;
-       }
-       .nav{
-           padding:15px;
-           height:50px;
-           display:flex;
-           flex-direction:row;
-       }
-
-       #search{
-           height: 40px;
-           width: 120px;
-           padding: 5px;
-           background-color: black;
-           color: white;
-           border-top-right-radius: 25px;
-           border-bottom-right-radius: 25px;
-       }
-       #searchbox{
-           border:none;
-           outline:none;
-           font-size:13px;
-           background:#fff;
-           height: 40px;
-           width: 550px;
-           border-top-left-radius: 25px;
-           border-bottom-left-radius: 25px;
-           margin-left: 100px;
-       }
-       #login{
-           margin-left: 150px;
-           font-size: 18px;
-       }
-       #cart{
-           margin-left: 150px;
-           margin-top: 10px;
-           gap: 5px;
-       }
-       #options{
-            display: flex;
-            flex-direction: row;
-            gap: 10px;
-            font-weight: bolder;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-       }
-       #options>div{
-           margin-left: 30px;
-           margin-right: 30px;
-       }
-   </style>
+    <script src="https://kit.fontawesome.com/3675b65816.js" crossorigin="anonymous"></script>
+   
+    <link rel="stylesheet" href="./navbar.css">
+    <title>Cosmetics:Buy Beauty Product Online at SUGAR Cosmetics Online Store</title>
 </head>
 <body>
-    <div class="nav">
-        <div class="sugarlogo">
-            <a href="#" title="SUGAR COSMETICS">
-                <img src="https://in.sugarcosmetics.com/desc-images/SUGARLogo1.png" alt="SUGAR Cosmetics" id="sugar_logo">
-            </a>
+    <div class="main_navbar">
+    <div class="navbar">
+        <div class="top">
+            <div class="logo">
+               <a href="navbar.html"><img src="./images/sugar_logo.jpg" alt=""></a> 
+
+            </div>
+            <div class="search">
+                <input  class="Input" type="text" placeholder="&nbsp; &nbsp; &nbsp; Try &quot; Liquid Lipstick &quot;">
+                
+                <button id="search-btn">Search</button>
+
+            </div>
+            <div id="login">
+                <img src="https://in.sugarcosmetics.com/desc-images/person.png" alt="" id="person">
+                <a href="Login.html" style="color: black; text-align:center;">
+                   Login/Register   
+                 </a>
+
+            </div>
+            <div class="icons">
+                <i class="fas fa-heart" title="Wishlist"></i>
+                <a href="cart_details.html" style="text-decoration:none;color:black;"> <i class="fas fa-shopping-bag" title="Cart"></i></a>
+               
+                <i class="fas fa-tags"></i>
+
+            </div>
         </div>
-        <div class="searchbox">
-            <input type="text" placeholder="Try Liquid Lipstick" id="searchbox">
-            <button id="search">Search</button>
-        </div>
-       <div id="login">
-           <img src="https://in.sugarcosmetics.com/desc-images/person.png" alt="" id="person">
-           <a href="#" style="color: black;">Login/Register</a>
-       </div>
-       <div id="cart">
-           <a href="#">Wishlist</a>
-           <a href="#">Cart</a>
-           <a href="#">Offer</a>
-       </div>
     </div>
     <br>
     <div id="options">
-        <div>MAKEUP</div>
-        <div>BRUSHES</div>
-        <div>SKINCARE</div>
-        <div>TRENDING</div>
-        <div>BLOG</div>
-        <div>OFFERS</div>
+
+        <div class="dropdown">
+            <div class="dropdown_title"><a href="">MAKEUP</a></div>
+            <div class="dropdown-content">
+                <div class="inside_dropdown">
+                    <a href="lips.html">LIPS</a>
+                </div>
+                <div class="inside_dropdown">
+                    <a href="#">FACE</a>
+                </div>
+                <div class="inside_dropdown">
+                    <a href="#">EYES</a>
+                </div> 
+              </div>
+        </div>
+
+        <div class="dropdown">
+            <div class="dropdown_title"><a href="">BRUSHES</a></div>
+            <div class="dropdown-content">
+                <div class="inside_dropdown">
+                    <a href="./brush.html">FACE BRUSHES</a>
+                </div>
+                <div class="inside_dropdown">
+                    <a href="#">EYE BRUSHES</a>
+                </div>
+              </div>
+        </div>
+
+        <div class="dropdown">
+            <div class="dropdown_title"><a href="skin_care.html">SKIN CARE</a></div>
+            <div class="dropdown-content">
+                <div class="inside_dropdown">
+                    <a href="skin_care.html">MOISTURIZERS</a>
+                </div>
+                <div class="inside_dropdown">
+                    <a href="#">MASKS</a>
+                </div>
+                <div class="inside_dropdown">
+                    <a href="#">SETTING MISTS</a>
+                </div>
+                <div class="inside_dropdown">
+                    <a href="#">COFFEE CULTURE RANGE</a>
+                </div>
+                <div class="inside_dropdown">
+                    <a href="#">SHEET MASK COMBO</a>
+                </div>
+                
+              </div>
+        </div>
+
+        <div class="dropdown">
+            <div class="dropdown_title"><a href="">TRENDING</a></div>
+            <div class="dropdown-content">
+                <div class="inside_dropdown">
+                    <a href="#">SUGAR MERCH STATION</a>
+                </div>
+                <div class="inside_dropdown">
+                    <a href="#">MAKEUP KITS</a>
+                </div>
+                <div class="inside_dropdown">
+                    <a href="#">BESTSELLERS</a>
+                </div> 
+              </div>
+        </div>
+
+
+
+       
+        <div class="dropdown">
+            <div class="dropdown_title"><a href="">BLOG</a></div>
+            <div class="dropdown-content">
+                <div class="inside_dropdown">
+                    <a href="#">FEATURED</a>
+                </div>
+                <div class="inside_dropdown">
+                    <a href="#">MAKEUP</a>
+                </div>
+                <div class="inside_dropdown">
+                    <a href="#">SKINCARE</a>
+                </div> 
+              </div>
+        </div>
+       
+        <div class="dropdown_title"><a href="">OFFERS</a></div>
     </div>
+</div>
+    <br>
+    <!-- image slider starts here -->
+    <div class="main-slider">
+        <div class="slides">
+            <!-- radio buttons -->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">
+ 
+            <!-- slide image start -->
+           <div class="slide first">
+               <img src="./images/slider/img1.jpg" alt="">
+           </div>
+           <div class="slide">
+               <img src="./images/slider/img2.jpg" alt="">
+           </div>
+           <div class="slide">
+               <img src="./images/slider/img3.jpg" alt="">
+           </div>
+           <div class="slide">
+               <img src="./images/slider/img4.jpg" alt="">
+           </div>
+           <div class="slide">
+               <img src="./images/slider/img5.jpg" alt="">
+           </div>
+
+        </div>
+        <button class="s1"  style="border-radius: 100%; border: none;"><img src="https://in.sugarcosmetics.com/less-than.png" ></button>
+        <button class="s2" style="border-radius: 100%; border: none;"><img src="https://in.sugarcosmetics.com/greater-than.png" ></button>
+     </div>
+      <div class="slide_radio_btn">
+           <!-- manual navigation -->
+         <div class="navigation-manual">
+             <label for="radio1" class="manual-btn"></label>
+             <label for="radio2" class="manual-btn"></label>
+             <label for="radio3" class="manual-btn"></label>
+             <label for="radio4" class="manual-btn"></label>
+             <label for="radio5" class="manual-btn"></label>
+         </div>
+          <!-- automatic navigation -->
+         <div class="navigation-auto">
+             <div class="auto-btn1"></div>
+             <div class="auto-btn2"></div>
+             <div class="auto-btn3"></div>
+             <div class="auto-btn4"></div>
+             <div class="auto-btn5"></div>
+         </div>
+      </div> 
+     </div>
+
+     <div class="fortitle">
+     <h2>SUGAR STREAMING</h2> 
+    </div>
+
+    <div class="container_for_video">
+
+        <div id="slider-container-outer">
+            <div id="slider-container" class="slider-container-transition">
+                <div class="slider-item" data-position="1">
+                    <video width="320" height="100%" autoplay="autoplay" loop muted>
+                        <source src="https://cdn4.fireworktv.com/medias/2022/2/14/1644814662-seqktjdn/watermarked/540/SUGARAirKissPowderLipstick-AD-Vertical.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                      </video>
+                      <video width="320" height="100%" autoplay="autoplay" loop muted >
+                        <source src="https://cdn4.fireworktv.com/medias/2022/2/15/1644919919-drjtghip/watermarked/540/EasyEyelinerHackusingaSpoon.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                      </video>
+                      <video width="320" height="100%" autoplay="autoplay" loop muted >
+                        <source src="https://cdn4.fireworktv.com/medias/2022/2/15/1644906634-nshmulgo/watermarked/540/FoundationHacks.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                      </video>
+                      <video width="320" height="100%" autoplay="autoplay" loop muted >
+                        <source src="https://cdn4.fireworktv.com/medias/2022/2/15/1644905324-hgvtazeo/watermarked/540/KoreanBeautyHack-JAMSU.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                      </video>
+                     
+                </div>
+                <div class="slider-item" data-position="2">
+                    <video width="320" height="100%" autoplay="autoplay"  muted >
+                        <source src="https://cdn4.fireworktv.com/medias/2022/2/15/1644906406-bavexioy/watermarked/540/MustTryContourHack.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                      </video>
+                      <video width="320" height="100%" autoplay="autoplay"  muted >
+                        <source src="https://cdn4.fireworktv.com/medias/2022/2/26/1645897322-rtkdoqwh/watermarked/540/BLENDTHERULES9-16.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                      </video>
+                      <video width="320" height="100%" autoplay="autoplay" muted >
+                        <source src="https://cdn4.fireworktv.com/medias/2022/2/15/1644905134-xntislfb/watermarked/540/HowtodefineyourEyebrows.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                      </video>
+                      <video width="320" height="100%" autoplay="autoplay"  muted >
+                        <source src="https://cdn4.fireworktv.com/medias/2022/2/15/1644921100-smbziwva/watermarked/540/Whyyoushouldnotskipsettingpowder.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                      </video>
+    
+                </div>
+                
+                
+            </div>
+            <button id="move-button" style="border-radius: 100%; border: none;"><img src="https://in.sugarcosmetics.com/greater-than.png" ></button>
+        </div>
+
+        
+    </div>
+
+    <div class="fortitle">
+        <h2>REFER YOUR FRIENDS</h2>
+    </div>
+
+    <div class="refer">
+        <img src="./images/refer.jpg" alt="REFER YOUR FRIENDS">
+    </div>
+
+    <div class="fortitle">
+    <h2>BESTSELLERS</h2>    
+    </div>
+
+    <div class="container_for_bestsellers">
+
+        <center>
+            <div style="text-align: center;" id="cardSlide1">
+                <a href="/products/air-kiss-powder-lipstick" style="color: black;">
+                    <div style=" display: inline-block; width: 20%;">
+                        <span style="display: flex;">
+                            <img alt="Air Kiss Powder Lipstick" src="https://cdn.shopify.com/s/files/1/0906/2558/products/AirKissPowderPoweredByImagesArtboard1.jpg?v=1644813116" title="Air Kiss Powder Lipstick" style="object-fit: contain; width: 100%; height: 250px;">
+                            <span class="pt-1" style="font-size: 12px; font-weight: bold;"> 5 </span>
+                            <img src="https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png" width="15px" height="15px" alt="shades" title="shades">
+                        </span>
+                        <div class="product-name" style="text-align: center;">
+                            <h6 style="overflow: hidden; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">
+                                <span style="font-size: 17px;">Air Kiss Powder Lipstick</span>
+                            </h6>
+                    </div>
+                    <div class="homePricingDetails" style="text-align: center; font-size: 17px; font-weight: bold;">
+                            <span>₹</span>
+                            <span> 499</span>
+                    </div>
+                    <div>
+                        <button class="btn btn-dark collectionButton" style=" border: none; outline: none; color: #fff; background-color: rgb(41, 39, 39); height: 50px; width: 80%; font-size: 15px;margin-top:10px;cursor:pointer;">SELECT SHADE</button>
+                    </div>
+                    </div>
+                </a>
+                <a href="/products/air-kiss-powder-lipstick" style="color: black;">
+                    <div style=" display: inline-block; width: 20%;">
+                        <span style="display: flex;">
+                            <img alt="Lip Zip Matte Topper" src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_c30a9b16-ef13-44c3-af41-04b227c62419.jpg?v=1642434141" title="Lip Zip Matte Topper" style="object-fit: contain; width: 100%; height: 250px;">
+                        </span>
+                        <div class="product-name" style="text-align: center;">
+                            <h6 style="overflow: hidden; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">
+                                <span style="font-size: 17px;">Lip Zip Matte Topper</span>
+                            </h6>
+                    </div>
+                    <div class="homePricingDetails" style="text-align: center; font-size: 17px; font-weight: bold;">
+                            <span>₹</span>
+                            <span> 499</span>
+                    </div>
+                    <div>
+                        <button class="btn btn-dark collectionButton" style="  border: none; outline: none; color: #fff; background-color: rgb(41, 39, 39); height: 50px; width: 80%; font-size: 15px;margin-top:10px;cursor:pointer;">SELECT SHADE</button>
+                    </div>
+                    </div>
+                </a>
+                <a href="/products/air-kiss-powder-lipstick" style="color: black;">
+                    <div style="display: inline-block; width: 20%;">
+                        <span style="display: flex;">
+                            <img alt="Matte As Hell Crayon Lipstick" src="https://cdn.shopify.com/s/files/1/0906/2558/products/01_d6ffec78-c2b6-4466-8672-233fee0285a8.jpg?v=1640791955" title="Matte As Hell Crayon Lipstick" style="object-fit: contain; width: 100%; height: 250px;">
+                            <span class="pt-1" style="font-size: 12px; font-weight: bold;"> 36 </span>
+                            <img src="https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png" width="15px" height="15px" alt="shades" title="shades">
+                        </span>
+                        <div class="product-name" style="text-align: center;">
+                            <h6 style="overflow: hidden; font-weight: 400; font-family: Arial, Helvetica, sans-serif;">
+                                <span style="font-size: 17px; font-weight: bold;">Matte As Hell Crayon Lipstick</span>
+                            </h6>
+                    </div>
+                    <div class="homePricingDetails" style="text-align: center; font-size: 17px; font-weight: bold;">
+                            <span>₹</span>
+                            <span> 799</span>
+                    </div>
+                    <div>
+                        <button class="btn btn-dark collectionButton" style="  border: none; outline: none; color: #fff; background-color: rgb(41, 39, 39); height: 50px; width: 80%; font-size: 15px;margin-top:10px;cursor:pointer;">SELECT SHADE</button>
+                    </div>
+                    </div>
+                </a>
+                <a href="/products/air-kiss-powder-lipstick" style="color: black;">
+                    <div style="display: inline-block; width: 20%;">
+                        <span style="display: flex;">
+                            <img alt="Kohl Of Honour Intense Kajal" src="https://cdn.shopify.com/s/files/1/0906/2558/products/01.jpg?v=1639496513" title="Kohl Of Honour Intense Kajal" style="object-fit: contain; width: 100%; height: 250px;">
+                            <span class="pt-1" style="font-size: 12px; font-weight: bold;"> 6 </span>
+                            <img src="https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png" width="15px" height="15px" alt="shades" title="shades">
+                        </span>
+                        <div class="product-name" style="text-align: center;">
+                            <h6 style="overflow: hidden; font-weight: 400; font-family: Arial, Helvetica, sans-serif;">
+                                <span style="font-size: 17px;  font-weight: bold;">Kohl Of Honour Intense Kajal</span>
+                            </h6>
+                    </div>
+                    <div class="homePricingDetails" style="text-align: center; font-size: 17px; font-weight: bold;">
+                            <span>₹</span>
+                            <span> 249</span>
+                    </div>
+                    <div>
+                        <button class="btn btn-dark collectionButton" style=" border: none; outline: none; color: #fff; background-color: rgb(41, 39, 39); height: 50px; width: 80%; font-size: 15px;margin-top:10px;cursor:pointer;">SELECT SHADE</button>
+                    </div>
+                    </div>
+                </a>
+            </div>
+        </center>  
+        <center>
+            <div style="display: none; text-align: center; " id="cardSlide2">
+                <a href="/products/air-kiss-powder-lipstick" style="color: black;">
+                    <div style=" display: inline-block; width: 20%;">
+                        <span style="display: flex;">
+                            <img alt="Kohl Of Honour Intense Kajal" src="https://cdn.shopify.com/s/files/1/0906/2558/products/01.jpg?v=1639496513" title="Kohl Of Honour Intense Kajal" style="object-fit: contain; width: 100%; height: 250px;">
+                            <span class="pt-1" style="font-size: 12px; font-weight: bold;"> 6 </span>
+                            <img src="https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png" width="15px" height="15px" alt="shades" title="shades">
+                        </span>
+                        <div class="product-name" style="text-align: center;">
+                            <h6 style="overflow: hidden; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">
+                                <span style="font-size: 17px;">Kohl Of Honour Intense Kajal</span>
+                            </h6>
+                    </div>
+                    <div class="homePricingDetails" style="text-align: center; font-size: 17px; font-weight: bold;">
+                            <span>₹</span>
+                            <span> 249</span>
+                    </div>
+                    <div>
+                        <button class="btn btn-dark collectionButton" style=" border: none; outline: none; color: #fff; background-color: rgb(41, 39, 39); height: 50px; width: 80%; font-size: 15px;margin-top:10px;cursor:pointer;">SELECT SHADE</button>
+                    </div>
+                    </div>
+                </a>
+                <a href="/products/air-kiss-powder-lipstick" style="color: black;">
+                    <div style=" display: inline-block; width: 20%;">
+                        <span style="display: flex;">
+                            <img alt="Tipsy Lips Moisturizing Balm" src="https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-tipsy-lips-moisturizing-balm-01-mojito-15057279877203.jpg?v=1619122412" title="Tipsy Lips Moisturizing Balm" style="object-fit: contain; width: 100%; height: 250px;">
+                            <span class="pt-1" style="font-size: 12px; font-weight: bold;"> 7 </span>
+                            <img src="https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png" width="15px" height="15px" alt="shades" title="shades">    
+                        </span>
+                        <div class="product-name" style="text-align: center;">
+                            <h6 style="overflow: hidden; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">
+                                <span style="font-size: 17px;">Tipsy Lips Moisturizing Balm</span>
+                            </h6>
+                    </div>
+                    <div class="homePricingDetails" style="text-align: center; font-size: 17px; font-weight: bold;">
+                            <span>₹</span>
+                            <span> 199</span>
+                    </div>
+                    <div>
+                        <button class="btn btn-dark collectionButton" style=" border: none; outline: none; color: #fff; background-color: rgb(41, 39, 39); height: 50px; width: 80%; font-size: 15px;margin-top:10px;cursor:pointer;">SELECT SHADE</button>
+                    </div>
+                    </div>
+                </a>
+                <a href="/products/air-kiss-powder-lipstick" style="color: black;">
+                    <div style="display: inline-block; width: 20%;">
+                        <span style="display: flex;">
+                            <img alt="Contour De Force Face Palette" src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_51afaa84-af89-42b5-bdb8-a51b01257bc0.jpg?v=1639582607" title="Contour De Force Face Palette" style="object-fit: contain; width: 100%; height: 250px;">
+                            <span class="pt-1" style="font-size: 12px; font-weight: bold;"> 3 </span>
+                            <img src="https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png" width="15px" height="15px" alt="shades" title="shades">
+                        </span>
+                        <div class="product-name" style="text-align: center;">
+                            <h6 style="overflow: hidden; font-weight: 400; font-family: Arial, Helvetica, sans-serif;">
+                                <span style="font-size: 17px; font-weight: bold;">Contour De Force Face Palette</span>
+                            </h6>
+                    </div>
+                    <div class="homePricingDetails" style="text-align: center; font-size: 17px; font-weight: bold;">
+                            <span>₹</span>
+                            <span> 799</span>
+                    </div>
+                    <div>
+                        <button class="btn btn-dark collectionButton" style="  border: none; outline: none; color: #fff; background-color: rgb(41, 39, 39); height: 50px; width: 80%; font-size: 15px;margin-top:10px;cursor:pointer;">SELECT SHADE</button>
+                    </div>
+                    </div>
+                </a>
+                <a href="/products/air-kiss-powder-lipstick" style="color: black;">
+                    <div style="display: inline-block; width: 20%;">
+                        <span style="display: flex;">
+                            <img alt="Ace Of Face Foundation Stick" src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_529c20ee-c872-4029-9702-8580d7b9a66f.jpg?v=1639582652" title="Ace Of Face Foundation Stick" style="object-fit: contain; width: 100%; height: 250px;">
+                            <span class="pt-1" style="font-size: 12px; font-weight: bold;"> 22 </span>
+                            <img src="https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png" width="15px" height="15px" alt="shades" title="shades">
+                        </span>
+                        <div class="product-name" style="text-align: center;">
+                            <h6 style="overflow: hidden; font-weight: 400; font-family: Arial, Helvetica, sans-serif;">
+                                <span style="font-size: 17px;  font-weight: bold;">Ace Of Face Foundation Stick</span>
+                            </h6>
+                    </div>
+                    <div class="homePricingDetails" style="text-align: center; font-size: 17px; font-weight: bold;">
+                            <span>₹</span>
+                            <span> 999</span>
+                    </div>
+                    <div>
+                        <button class="btn btn-dark collectionButton" style="  border: none; outline: none; color: #fff; background-color: rgb(41, 39, 39); height: 50px; width: 80%; font-size: 15px;margin-top:10px;cursor:pointer;">SELECT SHADE</button>
+                    </div>
+                    </div>
+                </a>
+            </div>
+            <button class="arrow1" onclick="slide()" style="border-radius: 100%; border: none;"><img src="https://in.sugarcosmetics.com/less-than.png" ></button>
+            <button class="arrow2" onclick="slide()"style="border-radius: 100%; border: none;"><img src="https://in.sugarcosmetics.com/greater-than.png" ></button>
+    
+        </center>
+       
+        
+    </div>
+
+    <div class="fortitle">
+    <h2>QUICK BEAUTY TIPS WITH SUGAR</h2>    
+    </div>
+
+    
+
+
+
+    <div class="tip-slider">
+        <div class="tipslides">
+            <!-- radio buttons -->
+            <input type="radio" name="radio-btn" id="rad1">
+            <input type="radio" name="radio-btn" id="rad2">
+            <input type="radio" name="radio-btn" id="rad3">
+           
+ 
+            <!-- slide image start -->
+           <div class="slidetip first">
+               <img src="./images/tips_slider/tips1.jpg" alt="">
+           </div>
+           <div class="slidetip">
+               <img src="./images/tips_slider/tips2.jpg" alt="">
+           </div>
+           <div class="slidetip">
+               <img src="./images/tips_slider/tips3.jpg" alt="">
+           </div>
+           
+        </div>
+        <button class="s1"  style="border-radius: 100%; border: none;"><img src="https://in.sugarcosmetics.com/less-than.png" ></button>
+        <button class="s2" style="border-radius: 100%; border: none;"><img src="https://in.sugarcosmetics.com/greater-than.png" ></button>
+     </div>
+      <div class="slide_radio_btn_1">
+           <!-- manual navigation -->
+         <div class="navigation-manual_1">
+             <label for="rad1" class="manual-btn-1"></label>
+             <label for="rad2" class="manual-btn-1"></label>
+             <label for="rad3" class="manual-btn-1"></label>
+            
+         </div>
+          <!-- automatic navigation -->
+         <div class="navigation-auto_1">
+             <div class="auto-btn1-1"></div>
+             <div class="auto-btn2-2"></div>
+             <div class="auto-btn3-3"></div>
+            
+         </div>
+      </div> 
+     </div>
+
+     
+
+
+     <div class="fortitle">
+     <h2>HOT DEALS</h2> 
+    </div>
+
+
+    <div class="container_for_deal_slider">
+        <div id="slider-container-outer-1">
+            <div id="slider-container-1" class="slider-container-1-transition">
+                <div class="slider-item-1" data-position="1">
+                    <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/a7686011-cadb-4608-af31-79d86a407dd3.jpg" alt="">
+                    <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/954beb96-5d0c-4086-9969-3baf039dcba2.jpg" alt="">
+                    <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/c8162b83-a143-440c-abcd-d020c740b477.jpg" alt="">
+                     
+                </div>
+                <div class="slider-item-1" data-position="2">
+                    <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/a7686011-cadb-4608-af31-79d86a407dd3.jpg" alt="">
+                    <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/f7cc39ee-cf2b-4b71-820f-b5fdb405656c.jpg" alt="">
+                    <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/837413db-e9f9-49cd-b04b-1e2acb663ca5.jpg" alt="">
+                    
+    
+                </div>
+                
+                
+            </div>
+            <button id="move-button-1" style="border-radius: 100%; border: none;"><img src="https://in.sugarcosmetics.com/greater-than.png" ></button>
+        </div>
+    </div>
+
+
+    <div class="fortitle">
+     <h2>ULTIMATE LIPSTICK QUIZ</h2> 
+    </div>
+
+
+    <div class="ultimate_quiz">
+        <img src="./images/ultimate_quiz.jpg" alt="">
+        
+    </div>
+
+    <div class="fortitle">
+        <h2>SUPER SAVERS</h2> 
+       </div>
+   
+   
+       <div class="container_for_super_saver">
+        <div style="text-align: center;" id="cardSlide1">
+            <a href="/products/air-kiss-powder-lipstick" style="color: black;">
+                <div style=" display: inline-block; width: 20%;">
+                    <span style="display: flex;">
+                        <img alt="Plush Crush Crème Crayon" src="https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-plush-crush-creme-crayon-13974621519955.jpg?v=1619117067" title="Plush Crush Crème Crayon" style="object-fit: contain; width: 100%; height: 250px;">
+                    </span>
+                    <div class="product-name" style="text-align: center;">
+                        <h6 style="overflow: hidden; font-weight: bold; font-family: Arial, Helvetica, sans-serif;color:rgb(70, 69, 69)">
+                            <span style="font-size: 17px;">PLUSH CRUSH CREME CRAYON</span>
+                        </h6>
+                </div>
+                <div class="homePricingDetails" style="text-align: center; font-size: 17px; font-weight: 500;color:rgb(75, 74, 74);">
+                        <span><strike>Rs. 699</strike></span> </span>
+                        <span>Rs.</span>
+                        <span> 499</span>
+                        <span style="color: red;">(40% Off)</span>
+                </div>
+                <div>
+                   
+                    <button class="btn btn-dark collectionButton" style=" border: none; outline: none; color: #fff; background-color: rgb(41, 39, 39); height: 50px; width: 80%; font-size: 15px;margin-top:10px;cursor:pointer;">SELECT SHADE</button>
+                </div>
+                </div>
+            </a>
+            <a href="/products/air-kiss-powder-lipstick" style="color: black;">
+                <div style=" display: inline-block; width: 20%;">
+                    <span style="display: flex;">
+                        <img alt="Eye Told You So! Smudgeproof Eyeliner" src="https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-eye-told-you-so-smudgeproof-eyeliner-01-black-swan-black-13760408584275.jpg?v=1619116364" title="Eye Told You So! Smudgeproof Eyeliner" style="object-fit: contain; width: 100%; height: 250px;">
+                        <span class="pt-1" style="font-size: 12px; font-weight: bold;"> 4 </span>
+                        <img src="https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png" width="15px" height="15px" alt="shades" title="shades">
+                    </span>
+                    <div class="product-name" style="text-align: center;">
+                        <h6 style="overflow: hidden; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">
+                            <span style="font-size: 17px;">EYE TOLD YOU SO! SMUDGEPROOF EYELINER</span>
+                </div>
+                <div class="homePricingDetails" style="text-align: center; font-size: 17px; font-weight: bold;">
+                        <span>₹</span>
+                        <span>699</span>
+                </div>
+                <div>
+                    <button class="btn btn-dark collectionButton" style="  border: none; outline: none; color: #fff; background-color: rgb(41, 39, 39); height: 50px; width: 80%; font-size: 15px;margin-top:10px;cursor:pointer;">SELECT SHADE</button>
+                </div>
+                </div>
+            </a>
+            <a href="/products/air-kiss-powder-lipstick" style="color: black;">
+                <div style="display: inline-block; width: 20%;">
+                    <span style="display: flex;">
+                        <img alt="Eye Warned You So! Double Matte Eyeliner" src="https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-eye-warned-you-so-double-matte-eyeliner-01-black-swan-black-13954562654291.jpg?v=1619116881" title="Eye Warned You So! Double Matte Eyeliner" style="object-fit: contain; width: 100%; height: 250px;">
+                        <span class="pt-1" style="font-size: 12px; font-weight: bold;"> 4 </span>
+                        <img src="https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png" width="15px" height="15px" alt="shades" title="shades">
+                    </span>
+                    <div class="product-name" style="text-align: center;">
+                        <h6 style="overflow: hidden; font-weight: 400; font-family: Arial, Helvetica, sans-serif;">
+                            <span style="font-size: 17px; font-weight: bold;">EYE WARNED YOU SO! DOUBLE MATTE EYELINER</span>
+                        </h6>
+                </div>
+                <div class="homePricingDetails" style="text-align: center; font-size: 17px; font-weight: bold;">
+                        <span>₹</span>
+                        <span> 699</span>
+                </div>
+                <div>
+                    <button class="btn btn-dark collectionButton" style="  border: none; outline: none; color: #fff; background-color: rgb(41, 39, 39); height: 50px; width: 80%; font-size: 15px;margin-top:10px;cursor:pointer;">SELECT SHADE</button>
+                </div>
+                </div>
+            </a>
+            <a href="/products/air-kiss-powder-lipstick" style="color: black;">
+                <div style="display: inline-block; width: 20%;">
+                    <span style="display: flex;">
+                        <img alt="Swipe Right Hand Rub" src="https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-swipe-right-hand-rub-01-roaring-rose-15541873836115.jpg?v=1619125116" title="Swipe Right Hand Rub" style="object-fit: contain; width: 100%; height: 250px;">
+                        <span class="pt-1" style="font-size: 12px; font-weight: bold;"> 4 </span>
+                        <img src="https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png" width="15px" height="15px" alt="shades" title="shades">
+                    </span>
+                    <div class="product-name" style="text-align: center;">
+                        <h6 style="overflow: hidden; font-weight: 400; font-family: Arial, Helvetica, sans-serif;">
+                            <span style="font-size: 17px;  font-weight: bold;">SWIPE RIGHT HAND RUB</span>
+                        </h6>
+                </div>
+                <div class="homePricingDetails" style="text-align: center; font-size: 17px; font-weight: bold;">
+                        <span>₹</span>
+                        <span> 149</span>
+                </div>
+                <div>
+                    <button class="btn btn-dark collectionButton" style=" border: none; outline: none; color: #fff; background-color: rgb(41, 39, 39); height: 50px; width: 80%; font-size: 15px;margin-top:10px;cursor:pointer;">SELECT SHADE</button>
+                </div>
+                </div>
+            </a>
+        </div>
+          
+           
+       </div>
+
+       <div class="fortitle">
+        <h2>LIPSTICK STORE</h2> 
+       </div>
+   
+   
+       <div class="lipstick_store">
+        <div id="slider-container-outer-2">
+            <div id="slider-container-2" class="slider-container-2-transition">
+                <div class="slider-item-2" data-position="1">
+                    <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/a7686011-cadb-4608-af31-79d86a407dd3.jpg" alt="">
+                    <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/954beb96-5d0c-4086-9969-3baf039dcba2.jpg" alt="">
+                    <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/8a5a844b-e376-44fd-a158-9bbd8a6aa914.jpg" alt="">
+                     
+                </div>
+                <div class="slider-item-2" data-position="2">
+                    <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/a7686011-cadb-4608-af31-79d86a407dd3.jpg" alt="">
+                    <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/954beb96-5d0c-4086-9969-3baf039dcba2.jpg" alt="">
+                    <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/8a5a844b-e376-44fd-a158-9bbd8a6aa914.jpg" alt="">
+                    
+    
+                </div>
+            </div>
+            <button id="move-button-2" style="border-radius: 100%; border: none;"><img src="https://in.sugarcosmetics.com/greater-than.png" ></button>
+        </div>      
+           
+       </div>
+
+       <div class="fortitle">
+        <h2>THIS OR THAT</h2> 
+       </div>
+       <div class="conatiner_for_this_or_that">
+        <div class="this_or_that">
+            <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/36fce68e-a717-4b05-bb81-471e015a6c6f.jpg" alt="">
+            <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/a5fe23df-0f25-4c62-a0c7-96bf6ec1da09.jpg" alt="">
+        </div>
+       </div>
+        <!-- explore -->
+        <div class="fortitle">
+            <h2>EXPLORE</h2> 
+        </div>
+        <div class="container_for_explore">
+            <div id="slider-container-outer-3">
+                <div id="slider-container-3" class="slider-container-3-transition">
+                    <div class="slider-item-3" data-position="1">
+                        <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/1b9622f9-06cd-47d5-9216-8044886bf27b.jpg" alt="">
+                        <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/d220f7cd-ca2e-441b-bba4-df0b4e6b4609.jpg" alt="">
+                        <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/eb997f46-1b07-4b7a-b5f4-c5f6e48d0533.jpg" alt="">
+                        <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/eb997f46-1b07-4b7a-b5f4-c5f6e48d0533.jpg" alt="">
+                         
+                    </div>
+                    <div class="slider-item-3" data-position="2">
+                        <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/1b9622f9-06cd-47d5-9216-8044886bf27b.jpg" alt="">
+                        <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/d220f7cd-ca2e-441b-bba4-df0b4e6b4609.jpg" alt="">
+                        <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/eb997f46-1b07-4b7a-b5f4-c5f6e48d0533.jpg" alt="">
+                        <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/eb997f46-1b07-4b7a-b5f4-c5f6e48d0533.jpg" alt="">
+        
+                    </div>
+                    
+                    
+                </div>
+                <button id="move-button-3" style="border-radius: 100%; border: none;"><img src="https://in.sugarcosmetics.com/greater-than.png" ></button>
+            </div>
+        </div>
+
+        <div class="readmore">
+            <h3>READ MORE ABOUT SUGAR COSMETICS</h3> 
+        </div>
+        <div class="footer">
+            <div style="background-color: black;">     
+                <div style="text-align: center;">
+                    <img src="https://in.sugarcosmetics.com/Footer_sugar_icon.png" title="SUGAR Cosmetics" height="120px" alt="footer icon-Sugar Cosmetics">
+                </div>
+                <div style="text-align: center">
+                    <span style="margin: 1%;">
+                        <img src="https://in.sugarcosmetics.com/desc-images/facebook.svg" width="18" height="18" alt="" class="cursor">
+                    </span>
+        
+                    <span style="margin: 1%;">
+                        <img src="https://in.sugarcosmetics.com/desc-images/Instagram.svg" width="18" height="18" alt="" class="cursor">
+                    </span>
+                    
+                    <span style="margin: 1%;">
+                        <img src="https://in.sugarcosmetics.com/desc-images/Pinterest.svg" width="18" height="18" alt="" class="cursor">
+                    </span>
+                    
+                    <span style="margin: 1%;">
+                        <img src="https://in.sugarcosmetics.com/desc-images/Tumblr.svg" width="18" height="18" alt="" class="cursor">
+                    </span>
+                    
+                    <span style="margin: 1%;">
+                        <img src="https://in.sugarcosmetics.com/desc-images/Youtube.svg" width="18" height="18" alt="" class="cursor">
+                    </span>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(2,50%);">
+                    <div style="margin-left: 13%;">
+                        <h5 style="color:white;font-size:17px; font-family: Arial, Helvetica, sans-serif;font-weight: lighter;">SUBSCRIBE TO OUR NEWSLETTER</h5>
+                    </div>    
+                    <div style="margin-left: 3%;">
+                        <h5 style="color:white;font-size:17px; font-family: Arial, Helvetica, sans-serif;font-weight: lighter;">GET THE NEW SUGAR APP TODAY</h5>
+                    </div>   
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(2,50%);">
+                    <div>
+                        <input type="text" class="mail" placeholder="Your email address" >
+                        <button class="signupBtn">SIGN UP</button>
+                    </div>
+                    <div style="display: flex; flex-direction: row; margin-left: 3%; gap: 1%;">
+                        <div class="col-4" style="color:#999999; font-size: 16px; font-family: Arial, Helvetica, sans-serif;">Tap into a better shopping <br> experience.</div>
+                        <div>
+                            <a href="https://sugarcosmetics.app.link/WebFApp" target="_blank">
+                                <img src="https://in.sugarcosmetics.com/playstore.png" alt="playstore logo" style="margin-right:3px" height="30px">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://sugarcosmetics.app.link/WebFApp" target="_blank">
+                                <img src="https://in.sugarcosmetics.com/apple-store.png" alt="apple store logo" height="30px">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <br>
+                    <p style="color:white; font-family: Arial, Helvetica, sans-serif; margin-left: 100px;">INFORMATION</p>
+                    <br>
+                    <div style="display: flex; gap: 10%; margin-left: 100px;">
+                        <div class="info_content">
+                            <a class="pages_link" href="mailto:hello@sugarcosmetics.com" style="color: #999999; font-family: Arial, Helvetica, sans-serif;font-size: 17px;">Contact Us</a>
+                        </div>
+                        <div class="info_content">
+                            <a href="/pages/terms-conditions" style="color: #999999; font-family: Arial, Helvetica, sans-serif;font-size: 17px;">Terms &amp; Conditions</a>
+                        </div>
+                        <div class="info_content" >
+                            <a href="/pages/returns-refunds" style="color: #999999; font-family: Arial, Helvetica, sans-serif;font-size: 17px;">Returns</a>
+                        </div><div class="info_content">
+                            <a href="/pages/faqs" style="color: #999999; font-family: Arial, Helvetica, sans-serif;font-size: 17px;">FAQs</a>
+                        </div><div class="info_content">
+                            <a href="/pages/about-us" style="color: #999999; font-family: Arial, Helvetica, sans-serif;font-size: 17px;">About Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h5 style="color:white;font-size:17px ; font-family: Arial, Helvetica, sans-serif; font-weight: lighter; margin-left: 100px;">GET IN TOUCH</h5>
+                </div>
+                <div style="display: flex; margin-left: 100px; gap: 8%;">
+                    <div>
+                        <div style="display: flex;">
+                            <img src="https://in.sugarcosmetics.com/desc-images/phone_android_white.svg" width="15px" height="15px">
+                            <div style="color: white; font-family: Arial, Helvetica, sans-serif; font-size: 17px; font-weight: lighter;">Call us at</div>
+                        </div>
+                        <div><a href="tel:022-2847-5555" class="mail_link" style="text-decoration:none; color: #999999;">022-2847-5555</a></div>
+                        <div><a href="tel:022-6805-6009" class="mail_link" style="text-decoration:none;color: #999999;">022-6805-6009</a></div>
+                        <div style="color:gray;font-size:12px;font-family: Arial, Helvetica, sans-serif;">Monday to Friday : 9 AM to 7 PM</div>
+                    </div>
+                    <div style="color:white">Support<p class="info_content"><a class="mail_link" style="text-decoration:none; color: #999999;" href="mailto:hello@sugarcosmetics.com">hello@sugarcosmetics.com</a></p></div>
+                    <div style="color:white"><a class="mail_link" style="text-decoration:none; color: white;" target="_blank" href="https://in.sugarcosmetics.com/pages/career-opportunities">WORK WITH US</a><p class="info_content"><a class="mail_link" style="text-decoration:none;  color: #999999;" href="mailto:careers@sugarcosmetics.com">careers@sugarcosmetics.com</a></p></div>
+                    <div style="color:white"><a class="mail_link" target="_blank" style="text-decoration:none; color: white;" href="https://newsroom.sugarcosmetics.com">PRESS &amp; MEDIA</a><p class="info_content"><a class="mail_link" target="_blank" style="text-decoration:none;  color: #999999;" href="mailto:pr@sugarcosmetics.com">pr@sugarcosmetics.com</a></p></div>
+                    <div style="color:white"><a class="mail_link" target="_blank" style="text-decoration:none; color: white;" href="https://blog.sugarcosmetics.com/collab">INFLUENCER COLLAB</a><p class="info_content"><a class="mail_link" target="_blank" style="text-decoration:none; color: #999999;" href="https://blog.sugarcosmetics.com/collab">JOIN US</a></p></div>
+                </div>
+                <div style="border-top: none; border-left: none; border-right: none; border-bottom: 1px solid white; margin: 50px;"></div>
+                <div style="color:white;font-family:'Poppins', sans-serif; text-align: center;">Copyright © 2022 SUGAR Cosmetics. All rights reserved.</div>
+            <br><br>
+            </div>
+        </div>
+    
 </body>
 </html>
+<script>
+    var counter=1;
+    setInterval(function(){
+        document.getElementById('radio'+counter).checked=true;
+        counter++;
+        if(counter>5){
+            counter=1;
+        }
+    },5700);
+    /* setInterval(function(){
+        document.getElementById('rad'+counter).checked=true;
+        counter++;
+        if(counter>3){
+            counter=1;
+        }
+    },1000); */
+
+
+
+    const FlexSlider = {
+	// total no of items
+	num_items: document.querySelectorAll(".slider-item").length,
+	
+	// position of current item in view
+	current: 1,
+
+	init: function() {
+		// set CSS order of each item initially
+		document.querySelectorAll(".slider-item").forEach(function(element, index) {
+			element.style.order = index+1;
+		});
+
+		this.addEvents();
+	},
+
+	addEvents: function() {
+		var that = this;
+
+		// click on move item button
+		document.querySelector("#move-button").addEventListener('click', () => {
+			this.gotoNext();
+		});
+
+		// after each item slides in, slider container fires transitionend event
+		document.querySelector("#slider-container").addEventListener('transitionend', () => {
+			this.changeOrder();
+		});
+	},
+
+	changeOrder: function() {
+		// change current position
+		if(this.current == this.num_items)
+			this.current = 1;
+		else 
+			this.current++;
+
+		let order = 1;
+
+		// change order from current position till last
+		for(let i=this.current; i<=this.num_items; i++) {
+			document.querySelector(".slider-item[data-position='" + i + "']").style.order = order;
+			order++;
+		}
+
+		// change order from first position till current
+		for(let i=1; i<this.current; i++) {
+			document.querySelector(".slider-item[data-position='" + i + "']").style.order = order;
+			order++;
+		}
+
+		// translate back to 0 from -100%
+		// we don't need transitionend to fire for this translation, so remove transition CSS
+		document.querySelector("#slider-container").classList.remove('slider-container-transition');
+		document.querySelector("#slider-container").style.transform = 'translateX(0)';
+	},
+
+	gotoNext: function() {
+		// translate from 0 to -100% 
+		// we need transitionend to fire for this translation, so add transition CSS
+		document.querySelector("#slider-container").classList.add('slider-container-transition');
+		document.querySelector("#slider-container").style.transform = 'translateX(-100%)';
+	}
+};
+
+FlexSlider.init();
+
+
+    var btn = document.getElementById("slidingbtn");
+    var btn2 = document.getElementById("slidingbtn");
+    var slide1 = document.getElementById("cardSlide1");
+    var slide2 = document.getElementById("cardSlide2");
+    function slide(){
+        if(slide2.style.display == "none"){
+            slide1.style.display = "none";
+            slide2.style.display = "contents";
+        }
+        else{
+            slide1.style.display = "contents";
+            slide2.style.display = "none";
+        }
+    }
+
+
+
+    // for deals
+    const dealSlider = {
+	// total no of items
+	num_items: document.querySelectorAll(".slider-item-1").length,
+	
+	// position of current item in view
+	current: 1,
+
+	init: function() {
+		// set CSS order of each item initially
+		document.querySelectorAll(".slider-item-1").forEach(function(element, index) {
+			element.style.order = index+1;
+		});
+
+		this.addEvents();
+	},
+
+	addEvents: function() {
+		var that = this;
+
+		// click on move item button
+		document.querySelector("#move-button-1").addEventListener('click', () => {
+			this.gotoNext();
+		});
+
+		// after each item slides in, slider container fires transitionend event
+		document.querySelector("#slider-container-1").addEventListener('transitionend', () => {
+			this.changeOrder();
+		});
+	},
+
+	changeOrder: function() {
+		// change current position
+		if(this.current == this.num_items)
+			this.current = 1;
+		else 
+			this.current++;
+
+		let order = 1;
+
+		// change order from current position till last
+		for(let i=this.current; i<=this.num_items; i++) {
+			document.querySelector(".slider-item-1[data-position='" + i + "']").style.order = order;
+			order++;
+		}
+
+		// change order from first position till current
+		for(let i=1; i<this.current; i++) {
+			document.querySelector(".slider-item-1[data-position='" + i + "']").style.order = order;
+			order++;
+		}
+
+		// translate back to 0 from -100%
+		// we don't need transitionend to fire for this translation, so remove transition CSS
+		document.querySelector("#slider-container-1").classList.remove('slider-container-1-transition');
+		document.querySelector("#slider-container-1").style.transform = 'translateX(0)';
+	},
+
+	gotoNext: function() {
+		// translate from 0 to -100% 
+		// we need transitionend to fire for this translation, so add transition CSS
+		document.querySelector("#slider-container-1").classList.add('slider-container-1-transition');
+		document.querySelector("#slider-container-1").style.transform = 'translateX(-100%)';
+	}
+};
+
+dealSlider.init();
+
+
+// for lipstick slider
+const lipstickSlider = {
+	// total no of items
+	num_items: document.querySelectorAll(".slider-item-2").length,
+	
+	// position of current item in view
+	current: 1,
+
+	init: function() {
+		// set CSS order of each item initially
+		document.querySelectorAll(".slider-item-2").forEach(function(element, index) {
+			element.style.order = index+1;
+		});
+
+		this.addEvents();
+	},
+
+	addEvents: function() {
+		var that = this;
+
+		// click on move item button
+		document.querySelector("#move-button-2").addEventListener('click', () => {
+			this.gotoNext();
+		});
+
+		// after each item slides in, slider container fires transitionend event
+		document.querySelector("#slider-container-2").addEventListener('transitionend', () => {
+			this.changeOrder();
+		});
+	},
+
+	changeOrder: function() {
+		// change current position
+		if(this.current == this.num_items)
+			this.current = 1;
+		else 
+			this.current++;
+
+		let order = 1;
+
+		// change order from current position till last
+		for(let i=this.current; i<=this.num_items; i++) {
+			document.querySelector(".slider-item-2[data-position='" + i + "']").style.order = order;
+			order++;
+		}
+
+		// change order from first position till current
+		for(let i=1; i<this.current; i++) {
+			document.querySelector(".slider-item-2[data-position='" + i + "']").style.order = order;
+			order++;
+		}
+
+		// translate back to 0 from -100%
+		// we don't need transitionend to fire for this translation, so remove transition CSS
+		document.querySelector("#slider-container-2").classList.remove('slider-container-2-transition');
+		document.querySelector("#slider-container-2").style.transform = 'translateX(0)';
+	},
+
+	gotoNext: function() {
+		// translate from 0 to -100% 
+		// we need transitionend to fire for this translation, so add transition CSS
+		document.querySelector("#slider-container-2").classList.add('slider-container-2-transition');
+		document.querySelector("#slider-container-2").style.transform = 'translateX(-100%)';
+	}
+};
+
+lipstickSlider.init();
+
+
+//explore section
+
+const exploreSlider = {
+	// total no of items
+	num_items: document.querySelectorAll(".slider-item-3").length,
+	
+	// position of current item in view
+	current: 1,
+
+	init: function() {
+		// set CSS order of each item initially
+		document.querySelectorAll(".slider-item-3").forEach(function(element, index) {
+			element.style.order = index+1;
+		});
+
+		this.addEvents();
+	},
+
+	addEvents: function() {
+		var that = this;
+
+		// click on move item button
+		document.querySelector("#move-button-3").addEventListener('click', () => {
+			this.gotoNext();
+		});
+
+		// after each item slides in, slider container fires transitionend event
+		document.querySelector("#slider-container-3").addEventListener('transitionend', () => {
+			this.changeOrder();
+		});
+	},
+
+	changeOrder: function() {
+		// change current position
+		if(this.current == this.num_items)
+			this.current = 1;
+		else 
+			this.current++;
+
+		let order = 1;
+
+		// change order from current position till last
+		for(let i=this.current; i<=this.num_items; i++) {
+			document.querySelector(".slider-item-3[data-position='" + i + "']").style.order = order;
+			order++;
+		}
+
+		// change order from first position till current
+		for(let i=1; i<this.current; i++) {
+			document.querySelector(".slider-item-3[data-position='" + i + "']").style.order = order;
+			order++;
+		}
+
+		// translate back to 0 from -100%
+		// we don't need transitionend to fire for this translation, so remove transition CSS
+		document.querySelector("#slider-container-3").classList.remove('slider-container-3-transition');
+		document.querySelector("#slider-container-3").style.transform = 'translateX(0)';
+	},
+
+	gotoNext: function() {
+		// translate from 0 to -100% 
+		// we need transitionend to fire for this translation, so add transition CSS
+		document.querySelector("#slider-container-3").classList.add('slider-container-3-transition');
+		document.querySelector("#slider-container-3").style.transform = 'translateX(-100%)';
+	}
+   
+};
+exploreSlider.init();
+
+</script>
